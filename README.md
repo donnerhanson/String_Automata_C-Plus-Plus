@@ -53,7 +53,7 @@
  ## About The Programs
 
 These sets of programs simulate comparison of symbols and counts the amount of times a set of symbols occurs within a certain string.    
-The first program, found [here](https://github.com/donnerhanson/String_Automata_C-Plus-Plus/tree/main/string_automata_Compiler_construction/string_automata_Compiler_construction), utilizes a state machine to find occurrences of a string within a string and outputs the number of times string occured, as well as the ending index of each occurence. This program uses C++ goto's to avoid unreadable nested if-else statements and to clarify states.  
+The first program, found [here](https://github.com/donnerhanson/String_Automata_C-Plus-Plus/tree/main/string_automata_Compiler_construction/string_automata_Compiler_construction), utilizes a state machine to find occurrences of a string within a string and outputs the number of times string occured, as well as the ending index of each occurence. This includes overlapping occurrences of the pattern. This program uses C++ goto's to avoid unreadable nested if-else statements and to clarify states.  
 
  <!-- GETTING STARTED -->
  ## Getting Started
