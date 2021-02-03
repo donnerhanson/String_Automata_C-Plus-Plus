@@ -4,9 +4,16 @@
  Instructor: Dr. Kurz
  Class Name: Compiler Construction
  Class Number: 402-01
+ Optional Studying Assignment
  
  Program Description:
  Compare a pre-determined string of letters to a given string using a state machine using go-to's
+ 
+ To run the program on the command line, navigate to the src directory
+ type the command: make
+ type the command: ./run.exe
+ 
+ note that running the ".exe" file on mac from finder will not work however using the command line executable will work as intended
  */
 
 #include <iostream>
@@ -80,7 +87,7 @@ int main(int argc, const char * argv[]) {
         // else if any other char go to the beginning
     STATE_THREE:
         if (givenString[i] == preDet[3]) {
-            endIndexLocations.push_back(i);
+            endIndexLocations.push_back(i); // found the full string save the index
             i++;
             goto STATE_FOUR;
             
