@@ -73,7 +73,7 @@ The first program found [here](https://github.com/donnerhanson/String_Automata_C
 
  1. Clone the repo  
  ```sh  
- git clone String_Automata_C-Plus-Plus  
+ git clone https://github.com/donnerhanson/String_Automata_C-Plus-Plus.git    
  ```  
  2. Compilation  
  Using a terminal or windows command prompt.
