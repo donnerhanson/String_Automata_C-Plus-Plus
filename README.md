@@ -80,10 +80,8 @@ Then enter the command:
  ```  
  2. Compilation  
  Using a terminal or windows command prompt.
- Navigate to the location of the src file within any of the various cloned program.  
-
-compile using the makefile by using the command   
-
+ Navigate to the location of the src file within any of the various programs.  
+ Compile using the makefile by using the command   
  ```sh   
 make  
  ```
