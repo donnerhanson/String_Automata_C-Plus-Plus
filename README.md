@@ -79,7 +79,7 @@ Then enter the command:
  git clone https://github.com/donnerhanson/String_Automata_C-Plus-Plus.git    
  ```  
  2. Compilation  
- Using a terminal or windows command prompt.
+ Using a terminal or windows command prompt:  
  Navigate to the location of the src file within any of the various programs.  
  Compile using the makefile by using the command   
  ```sh   
