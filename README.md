@@ -72,6 +72,9 @@ The first program found [here](https://github.com/donnerhanson/String_Automata_C
  ### Installation  
 
  1. Clone the repo  
+Open Terminal.  
+Change the current working directory to the location where you want the cloned directory.  
+Then enter the command: 
  ```sh  
  git clone https://github.com/donnerhanson/String_Automata_C-Plus-Plus.git    
  ```  
