@@ -29,8 +29,6 @@
   Solving string comparisons using states in linear time
 
    <p align="center">
-
-     <br />
    </p>
  </p>
 
