@@ -111,7 +111,7 @@ End indices at: [ 3, 5, 7, 9, 11 ]
  <!-- CONTACT -->
  ## Contact
 
- Donner Hanson - [@hansondonner](https://twitter.com/hansondonner) - hanso127@mail.chapman.edu - ChapmanID - 001276484  
+ Donner Hanson - [@hansondonner](https://twitter.com/hansondonner) - hanso127@mail.chapman.edu
 
  Project Link: [https://github.com/donnerhanson/String_Automata_C-Plus-Plus](https://github.com/donnerhanson/String_Automata_C-Plus-Plus)  
 
