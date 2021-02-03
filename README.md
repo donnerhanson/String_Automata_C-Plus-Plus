@@ -26,10 +26,9 @@
  <br />
 
    <h3 align="center">String Automata C++</h3>
-  Solving string comparisons using states in linear time
+ 
 
-   <p align="center">
-   </p>
+   <p align="center"> Solving string comparisons using states in linear time</p>
  </p>
 
 
