@@ -98,11 +98,16 @@ int main(int argc, const char * argv[]) {
         }
         
         // if char == 'b' go to state 5
-        // else if char != 'b' then start from state 3 (wild card state)
+        // else if char == 'c' then go to 4
+        // else if char != 'b' || 'c' then start from state 3 (wild card state)
     STATE_FOUR:
         if (givenString[i] == preDet[4]) {
             i++;
             goto STATE_FIVE;
+        }
+        else if (givenString[i] == preDet[3]) {
+            i++;
+            goto STATE_FOUR;
         }
         else {
             i++;
