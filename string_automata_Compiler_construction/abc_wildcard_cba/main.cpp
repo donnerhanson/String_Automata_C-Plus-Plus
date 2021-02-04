@@ -25,7 +25,7 @@ using namespace std;
 /* BEGIN MAIN */
 int main(int argc, const char * argv[]) {
     
-    string preDet = "abccba"; // this is the pattern that the program is designed to detect
+    string preDet = "abccba"; // this is the pattern that the program is designed to detect abc*cba <--- * is a wildcard character
     string givenString = "abccbabcbacba";
     vector<int> endIndexLocations;
     
