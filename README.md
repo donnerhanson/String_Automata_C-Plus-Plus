@@ -108,7 +108,7 @@ End indices at: [ 4, 6, 8, 10, 12 ]
 ```
 
 Program two:  
-    pre-determined pattern = "abc*cab" - this is the pattern that the program is designed to detect where '*' is a wildcard  
+    pre-determined pattern = "abc\*cab" - this is the pattern that the program is designed to detect where '\*' is a wildcard  
     String to find pattern = "abccbabcbacba" - this is the string that is searched through  
 ```sh  
 Amount of times "abccba" in string: 3  
