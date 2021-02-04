@@ -98,11 +98,21 @@ make
  ## Example  
 
  <!--1. Example: [text to display](pdf or filename here)  -->
-
+Program one:  
+    pre-determined pattern = "abab" - this is the pattern that the program is designed to detect  
+    String to find pattern = "abababababab" - this is the string that is searched through  
 ```sh  
 Amount of times "abab" in string: 5  
-End indices at: [ 3, 5, 7, 9, 11 ]  
+End indices at: [ 4, 6, 8, 10, 12 ]  
 
+```
+
+Program two:  
+    pre-determined pattern = "abc\*cab" - this is the pattern that the program is designed to detect where '\*' is a wildcard  
+    String to find pattern = "abccbabcbacba" - this is the string that is searched through  
+```sh  
+Amount of times "abccba" in string: 3  
+End indices at: [ 6, 10, 13 ]  
 ```
 
 
