@@ -25,8 +25,8 @@ using namespace std;
 /* BEGIN MAIN */
 int main(int argc, const char * argv[]) {
     
-    string preDet = "abab"; // this is the pattern that the program is designed to detect
-    string givenString = "abababababab";
+    string preDet = "abccba"; // this is the pattern that the program is designed to detect abc*cba <--- * is a wildcard character
+    string givenString = "abccbabcbacba";
     vector<int> endIndexLocations;
     
     /* BEGIN FOR LOOP */
@@ -46,7 +46,7 @@ int main(int argc, const char * argv[]) {
             break;
         }
         
-        // read in char --> if char == 'b' then go to next state else if 'a' stay else jump to beginning
+        // read in char --> if char == 'b' then go to next state; else if 'a' stay; else jump to beginning
     STATE_ONE:
         if (givenString[i] == preDet[1])  {
             i++;
@@ -67,8 +67,8 @@ int main(int argc, const char * argv[]) {
         
         
         // read in char
-        // if char == 'a' go to next state
-        // if char != 'a' jump to initial state
+        // if char == 'c' go to next state
+        // if char != 'c' jump to initial state
     STATE_TWO:
         if (givenString[i] == preDet[2]) {
             i++;
@@ -82,41 +82,56 @@ int main(int argc, const char * argv[]) {
             break;
         }
         
-        // if char == 'b' go to 4th state
-        // else if char == 'a' go to state 1
-        // else if any other char go to the beginning
+        // if char == 'c' go to 4th state
+        // else if any other char go to 3rd state (WILD CARD OR C STATE)
     STATE_THREE:
         if (givenString[i] == preDet[3]) {
             i++;
-            endIndexLocations.push_back(i); // found the full string save the index
             goto STATE_FOUR;
-            
-        }
-        else if (givenString[i] == preDet[0])  {
-            i++;
-            goto STATE_ONE;
             
         }
         else {
             i++;
             if (!(i >= givenString.length()))
-                goto STATE_ZERO;
+                goto STATE_THREE;
             break;
         }
         
-        // if char == 'a' - can detect overlapping of pattern - go to state 3
-        // else if char != 'a' then start from state 0 (initial state)
+        // if char == 'b' go to state 5
+        // else if char == 'c' then go to 4
+        // else if char != 'b' || 'c' then start from state 3 (wild card state)
     STATE_FOUR:
-        if (givenString[i] == preDet[2]) {
+        if (givenString[i] == preDet[4]) {
             i++;
+            goto STATE_FIVE;
+        }
+        else if (givenString[i] == preDet[3]) {
+            i++;
+            goto STATE_FOUR;
+        }
+        else {
+            i++;
+            if (!(i >= givenString.length()))
+                goto STATE_THREE;
+            break;
+        }
+        
+        
+        // IF CHAR == a, count + 1 and --> STATE 3;
+        // ELSE go to state 3
+        STATE_FIVE:
+        if (givenString[i] == preDet[5]) {
+            i++;
+            endIndexLocations.push_back(i); // found the full string save the index
             goto STATE_THREE;
         }
         else {
             i++;
             if (!(i >= givenString.length()))
-                goto STATE_ZERO;
+                goto STATE_THREE;
             break;
         }
+        
     } /* END FOR LOOP */
     
     /* OUTPUT RESULTS */
